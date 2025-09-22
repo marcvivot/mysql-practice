@@ -1,0 +1,14 @@
+Completed this 'easy' leetcode problem; my 1st for MySQL
+https://leetcode.com/problems/combine-two-tables/submissions/1778576382/
+
+This was my code:
+
+Select 
+P.firstName,
+P.lastName,
+A.city,
+A.state
+From person P
+Left Join address A
+    On A.personId = P.personId
+;
