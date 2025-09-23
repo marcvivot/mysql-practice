@@ -1,0 +1,10 @@
+Customers who ordered and identfying those that didnt order
+https://leetcode.com/problems/customers-who-never-order/
+
+
+Select C.Name as Customers
+From Customers as C
+Left Join Orders as O
+    On C.id = O.customerid
+Where O.customerId IS NULL
+;
