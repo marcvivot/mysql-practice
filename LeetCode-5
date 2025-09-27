@@ -1,0 +1,8 @@
+Duplicate email delete, keeping one with lowest subid
+https://leetcode.com/problems/delete-duplicate-emails/submissions/1784703010/
+
+Delete p1 From Person AS p1
+Inner Join Person as p2
+on p1.email = p2.email
+where p1.id > p2.id
+;
