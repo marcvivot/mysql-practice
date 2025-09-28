@@ -1,0 +1,11 @@
+Find employees with onus below 1000 or NULL
+https://leetcode.com/problems/employee-bonus/submissions/1785629687/
+
+Select E.name, B.bonus
+From Employee as E
+Left Join Bonus as B
+On E.empid = B.empid
+Where B.bonus < 1000
+OR B.bonus IS NULL
+
+;
