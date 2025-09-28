@@ -1,0 +1,11 @@
+Temperature higher than previous date
+Learned aout DateDiff here
+
+https://leetcode.com/problems/rising-temperature/
+
+Select w1.id as Id
+From Weather w1
+Inner Join Weather w2
+On DateDiff(w1.recordDate, w2.recordDate) = 1
+Where w1.temperature > w2.temperature
+;
