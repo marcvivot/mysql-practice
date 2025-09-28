@@ -1,0 +1,10 @@
+Find customers that have referrals and/or Null
+https://leetcode.com/problems/find-customer-referee/
+
+First problem I solved without any external consultation
+
+Select name
+from Customer
+Where referee_id != 2
+Or referee_id IS NULL
+;
